@@ -1,0 +1,21 @@
+#!/usr/bin/env ruby
+require 'rubygems'
+require 'bundler/setup'
+require 'uri'
+
+Bundler.require(:default)
+
+$LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
+require "crawl"
+require "page"
+require "base"
+base_url = ARGF.argv[0]
+
+BASE = Base.new(base_url)
+USER_AGENT = "TestBot"
+raise "need to set UserAgent Params" unless USER_AGENT
+link_store = Page.new(BASE.url)
+Crawl.new(link_store,).breadth
+
+
+
