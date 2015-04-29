@@ -1,16 +1,4 @@
-#TODO 
-#Handle the extra / at the end of urls
-# Handle Crazy Redirects ex 5 redirects <- Doing 
-# Handle JS Error Check
-# Better Queueing system ie Redis...
-# handle robots for new sites entered into the queue
 
-# Icebox 
-#  Handle url params when too many of same 
-# Handle Subdomains ?
-# Check For Layout errors/warnings
-# Thread Responsibly
-# SiteMaps
 require 'robots'
 
 class Crawl
@@ -63,22 +51,22 @@ class Crawl
 # Yes, I know this is a wrapper however this will catch errors and not follow said pages
   def get url
     begin
-      HTTParty.get(url)
+      [true, HTTParty.get(url)]
     rescue Exception => e 
-      false
+      [false, e]
     end
   end
 
   def parse_document url
     puts "visiting #{url}"
     resp = get url
-    if resp
-      parsed = Nokogiri::HTML(resp)
-      @pages[url] = Page.new(url, resp, parsed)
+    if resp[0]
+      parsed = Nokogiri::HTML(resp[1])
+      @pages[url] = Page.new(url, resp[1].code, false, parsed)
       @pages[url].visited = true
       @pages[url]
     else
-      @pages[url] = Page.new(url, 404)
+      @pages[url] = Page.new(url,404, resp[1])
       false
     end
   end
