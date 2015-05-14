@@ -13,11 +13,11 @@ class Crawl
   end
 
   def start
-    get_links_for parse_document(@base_page.location)
+    get_links_for parse_document(@base_page.link.url)
   end
 
   def check_robots
-    @robots = Robots.new(@base_page.page_url.uri)
+    @robots = Robots.new(@base_page.link.uri)
     @robots.discover
   end
 
