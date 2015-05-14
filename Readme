@@ -1,16 +1,15 @@
 #TODO 
 #Handle the extra / at the end of urls
-# Report Data
+
 # Write specs
-# Use Redis As a queuing system
 # Check Image Links
 # make this app into a gem that returns an object for each site crawled
  or stores info in a csv if used as a standalone service.
 # Handle JS Error Check
-# Better Queueing system ie Redis...
 # handle robots for new sites entered into the queue
 
 # Icebox 
+# Use Redis As a queuing system
 #  Handle url params when too many of same 
 # Handle Subdomains ?
 # Check For Layout errors/warnings

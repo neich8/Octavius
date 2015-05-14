@@ -9,13 +9,15 @@ class Crawl
     # TO be searched
     @queue = []
     @pages = {}
-    @base_page = base_page
-    check_robots
-    get_links_for parse_document(base_page.location)
+    @base_page = base_page    
+  end
+
+  def start
+    get_links_for parse_document(@base_page.location)
   end
 
   def check_robots
-    @robots = Robots.new(base_page.page_url.uri)
+    @robots = Robots.new(@base_page.page_url.uri)
     @robots.discover
   end
 

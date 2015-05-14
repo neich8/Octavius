@@ -46,7 +46,7 @@ class Link
 
   def get_links?
     begin
-      url.include?(BASE.url)
+      url.include?(BASE.to_s)
     rescue Exception => e 
       binding.pry
     end
