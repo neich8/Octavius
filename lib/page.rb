@@ -2,14 +2,21 @@ require 'link'
 
 class Page
   attr_accessor :visited
-  attr_reader :status_code, :body, :page_url, :error
+  attr_reader :status_code, :body, :page_url, :error, :request_id
 
-  def initialize(page, status_code, error, body=nil, storage="csv")
+  def initialize(page, status_code, error, extras= {})
     @page_url = Link.new(URI(page))
     @status_code = status_code
     @error = error
-    @body = body
-    send(storage.to_sym)
+    @body = extras[:extras]
+    @request_id = set_request_id(extras)
+    csv
+  end
+
+  def set_request_id(extras)
+    if extras[:resp]
+      extras[:resp].headers["x-request-id"]
+    end
   end
 
   def links
@@ -26,7 +33,7 @@ class Page
 
   def csv
     CSV.open(CSV_NAME, "ab") do |csv|
-      csv << [location, status_code, error]
+      csv << [location, status_code, error, request_id, Time.now]
     end
   end
 end

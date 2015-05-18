@@ -62,7 +62,7 @@ class Crawl
     resp = get url
     if resp[0]
       parsed = Nokogiri::HTML(resp[1])
-      @pages[url] = Page.new(url, resp[1].code, false, parsed)
+      @pages[url] = Page.new(url, resp[1].code, false, {extras: parsed, resp: resp[1] } )
       @pages[url].visited = true
       @pages[url]
     else
