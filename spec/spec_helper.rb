@@ -7,7 +7,7 @@ require 'pry'
 require 'uri'
 
 BASE = URI("https://testing.com")
-
+CSV_NAME = "crawl.csv"
 RSpec.configure do |c|
   c.order = "random"
   c.formatter = 'documentation'
