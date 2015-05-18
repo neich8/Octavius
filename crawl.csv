@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 https://groupon.com/coupons/stores,200,false,,2015-05-07 15:15:26 -0500
 https://groupon.com/coupons/stores,200,false,7a40998b-57c3-4938-82cb-41488b13365d,2015-05-07 15:15:28 -0500
 https://groupon.com/coupons/stores/azor.com,200,false,8c856057-0d59-471b-ad70-5c48f8077721,2015-05-07 15:15:29 -0500
@@ -6967,3 +6968,82 @@ https://staging.groupon.com/coupons/stores/thefiltersource.com,200,false,c2ca59d
 https://staging.groupon.com/coupons/stores/thefeed.com,404,"",,2015-05-13 17:13:03 -0500
 https://staging.groupon.com/coupons/stores/thefantasybox.com,404,"",,2015-05-13 17:13:04 -0500
 https://staging.groupon.com/coupons/stores/theequestriancorner.com,404,SIGHUP,,2015-05-13 17:13:06 -0500
+=======
+https://twitter.com,200,false
+https://www.twitter.com,200,false
+https://www.twitter.com,200,false
+https://www.cnn.com,200,false
+http://www.cnn.com/,200,false
+http://www.cnn.com/,200,false
+http://www.cnn.com/collection,200,false
+http://www.cnn.com/content/home/blog.do,404,false
+http://www.cnn.com/content/home/contact.do,404,false
+http://www.cnn.com/content/home/about.do,404,false
+http://www.cnn.com/content/home/FAQ.do,404,false
+http://www.cnn.com/content/bin/15194667.do,404,false
+http://www.cnn.com/content/bin/15194666.do,404,false
+http://www.cnn.com/content/bin/15194665.do,404,false
+http://www.cnn.com/content/bin/15194664.do,404,false
+http://www.cnn.com/content/bin/15174205.do,404,false
+http://www.cnn.com/content/bin/15173899.do,404,false
+http://www.cnn.com/content/bin/15171269.do,404,false
+http://www.cnn.com/content/showBin.do,404,false
+http://www.cnn.com/content/home.do,404,false
+http://www.cnn.com/content/bin/0.do,404,false
+http://www.cnn.com/transcripts,200,false
+http://www.cnn.com/TRANSCRIPTS/ddhln.html,200,false
+http://www.cnn.com/TRANSCRIPTS/1104/04/ddhln.01.html,200,false
+http://www.cnn.com/TRANSCRIPTS/1104/05/ddhln.01.html,200,false
+http://www.cnn.com/TRANSCRIPTS/1104/06/ddhln.01.html,200,false
+http://www.cnn.com/TRANSCRIPTS/1104/07/ddhln.01.html,200,false
+http://www.cnn.com/TRANSCRIPTS/1104/08/ddhln.01.html,404,""
+http://www.cnn.com/TRANSCRIPTS/1104/11/ddhln.01.html,404,""
+http://www.cnn.com/TRANSCRIPTS/1104/12/ddhln.01.html,404,""
+http://www.cnn.com/TRANSCRIPTS/1104/13/ddhln.01.html,200,false
+http://www.cnn.com/TRANSCRIPTS/1104/14/ddhln.01.html,200,false
+http://www.cnn.com/TRANSCRIPTS/1104/15/ddhln.01.html,200,false
+http://www.cnn.com/TRANSCRIPTS/1104/18/ddhln.01.html,200,false
+http://www.cnn.com/TRANSCRIPTS/1104/19/ddhln.01.html,404,SIGHUP
+https://groupon.com/coupons,200,false
+https://groupon.com/coupons,200,false
+https://groupon.com/coupons/categories/books-magazines,200,false
+https://groupon.com/coupons/stores/highbridgeaudio.com,200,false
+https://groupon.com/coupons/stores/valuemags.com,200,false
+https://groupon.com/coupons/stores/chroniclebooks.com,200,false
+https://groupon.com/coupons/stores/service.usatoday.com,200,false
+https://groupon.com/coupons/stores/nytimes.com,200,false
+https://groupon.com/coupons/stores/magazines.com,200,false
+https://groupon.com/coupons/stores/discountmags.com,200,false
+https://groupon.com/coupons/stores/hpb.com,200,false
+https://groupon.com/coupons/stores/biblio.com,200,false
+https://groupon.com/coupons/stores/ecampus.com,200,false
+https://groupon.com/coupons/stores/alibris.com,200,false
+https://groupon.com/coupons/categories/childrens-book-clubs,200,false
+https://groupon.com/coupons/stores/store.zoobooks.com,200,false
+https://groupon.com/coupons/stores/highlights.com,200,false
+https://groupon.com/coupons/categories/book-clubs,200,false
+https://groupon.com/coupons/stores/audiobooks.com,404,SIGHUP
+https://groupon.com,200,false
+https://groupon.com,200,false
+https://groupon.com,200,false
+https://groupon.com,200,false
+https://groupon.com,200,false
+https://groupon.com,200,false
+https://groupon.com,200,false
+https://groupon.com,200,false
+https://groupon.com,200,false
+https://groupon.com/mobile,200,false
+https://groupon.com/browse/undefined,404,false
+https://groupon.com/coupons/stores/walgreens.com,200,false
+https://groupon.com/coupons/stores/starbucksstore.com,200,false
+https://groupon.com/coupons/stores/cafebritt.com,200,false
+https://groupon.com/coupons/stores/harryanddavid.com,200,false
+https://groupon.com/coupons/stores/jellybelly.com,200,false
+https://groupon.com/coupons/stores/davidscookies.com,404,""
+https://groupon.com/coupons/stores/dominos.com,404,""
+https://groupon.com/coupons/stores/teavana.com,404,""
+https://groupon.com/coupons/stores/candy.com,404,""
+https://groupon.com/coupons/stores/pizzahut.com,404,""
+https://groupon.com/coupons/stores/peapod.com,200,false
+https://groupon.com/coupons/stores/hersheysstore.com,200,false
+>>>>>>> 2413ae9dd012bd5272618fb2c5db089a5dd715d2

@@ -6,12 +6,11 @@
 
 class Link
   attr_reader :uri
-  attr_accessor :page, :visited, :real
+  attr_accessor :page,  :real
 
   def initialize(og_url)
     begin
       @uri = URI(og_url)
-      @visited = false
       generate
       @real = true
     rescue Exception => e 
@@ -26,11 +25,11 @@ class Link
       @uri.port = if BASE.uri.port == "3000" && !@uri.port
                     BASE.uri.port
                   end
-    if is_in_scope? 
-      @follow = true
-    else
-      @follow = false
-    end
+      if is_in_scope? 
+        @follow = true
+      else
+        @follow = false
+      end
     rescue Exception => e 
       @follow = false
     end
@@ -46,7 +45,7 @@ class Link
 
   def get_links?
     begin
-      url.include?(BASE.url)
+      url.include?(BASE.to_s)
     rescue Exception => e 
       binding.pry
     end
@@ -61,11 +60,11 @@ class Link
   end
 
   def valid_path?
-    @uri.respond_to?(:path) &&  !real_path
+    @uri.respond_to?(:path) &&  real_path
   end
 
   def real_path
-    ["#", "", "/", "/sitemap.xml"].include?(@uri.path)
+    !["#", "", "/", "/sitemap.xml"].include?(@uri.path)
   end
 
   def url
